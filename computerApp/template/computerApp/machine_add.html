@@ -1,0 +1,14 @@
+
+
+<div class="contain">
+    <h2>Ajouter une Machine</h2>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style-region.css' %}">
+{%block content %}
+<form method="post">
+    {% csrf_token %}
+    {{form.nom}} {{form.mach}}
+    <input type="submit" value="Submit">
+</form>
+{%endblock%}
+</div>

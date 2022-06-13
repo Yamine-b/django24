@@ -1,0 +1,21 @@
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style-region.css' %}">
+{% block content %}
+<div class="list">
+    <div class="place">
+    <h1>Liste des machines</h1>
+    {% if machines %}
+    <ul>
+        {%for machine in machines %}
+            <li>
+            <a href="{% url 'machine-detail' machine.id %}"}>{{machine.id}}</a>{{machine.nom}}
+            </li>
+        {%endfor%}
+    </ul>
+    {%else%}
+        <p>Il n\'y a pas de machine.</p>
+    {%endif%}
+</div>
+</div>
+{%endblock%}

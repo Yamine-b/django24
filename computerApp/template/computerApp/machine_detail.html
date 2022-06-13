@@ -1,0 +1,11 @@
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style-region.css' %}">
+{%block content %}
+    <div class="main">
+        <h1>Nom: {{machine.nom}}</h1>
+        <p><strong>Id</strong> : {{machine.id}} </a></p>
+        <p><strong>Date de maintenance : </strong> {{machine.maintenanceDate}}</p>
+        <p><strong>Machine : </strong> {{machine.mach}}</p>
+    </div>
+{%endblock%}

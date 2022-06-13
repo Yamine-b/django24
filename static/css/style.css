@@ -1,0 +1,103 @@
+h1 {
+color:red;
+}
+body {
+    background: rgb(34,195,176);
+    background: linear-gradient(0deg, rgba(34,195,176,1) 0%, rgba(34,176,195,1) 28%, rgba(45,131,253,1) 100%); 
+}
+.map {
+    overflow: hidden;
+}
+.map__image{
+    width: 60%;
+    float: left;
+    position: relative;
+    left: 300px;
+
+}
+.map__image svg{
+    height: 350;
+    width: 100%;
+}
+.map__image path{
+    fill:#808080;
+    stroke:#FFF;
+    stroke-width: 1px;
+    transition:fill 0.3s;
+}
+.map__image .is-active path{
+    fill:#ffffff;
+}
+.map__list{
+    float: right;
+    width: 35%;
+    position: relative;
+    top: 190px;
+    left: 200px;
+}
+.map__list a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.map__list a.is-active{
+    color:#ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.container {
+    background-color: #FFF;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 200px;;
+}
+.container .links {
+    float:right;
+    position: relative;
+    top:60px;
+    right: 120px;
+}
+img {
+    width: 315px;
+    height: 215px;
+    position: relative;
+    top: 10px;
+    left:80px;
+}
+#Connexion {
+    background-color: #FFF;
+    border-radius: 15px;
+    width: 300px;
+    font-size:30px;
+    font-family:serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:400px;
+    left:42.50%;
+}
+#Connexion a {
+    text-decoration: none;
+}
+.login {
+    background-color: #FFF;
+    border-radius: 15px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:35%;
+    left:29%;
+    padding-top:200px;
+}
+.login h2 {
+    font-family: serif;
+    position: relative;
+    bottom: 100px;
+    left: 7%;
+}
+.login form {
+    position: relative;
+    right: 6%;
+}

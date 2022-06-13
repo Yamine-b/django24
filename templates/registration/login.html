@@ -1,0 +1,18 @@
+{% block title %}
+<title>Connexion</title>
+{% endblock %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content %}
+<div class="login">
+    <h2>Connexion</h2>
+    <form method="post" class="from-group">
+        {% csrf_token %}
+        {{form}}
+        <p>Vous n'avez pas de compte , Inscrivez-vous <a href="/register">Ici</a></p>
+        <button type="submit" class="btn btn-succes">Se connecter</button>
+        
+    </form>
+</div>
+{% endblock %}

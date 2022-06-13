@@ -1,0 +1,13 @@
+
+<header>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% if user.is_authenticated %}
+        {% block content %}
+        {%endblock%}
+    {%else%}
+    <div id="Connexion">
+        <p>Connexion<a href="/login">  ici</a></p>
+    </div>
+    {%endif%}
+</header>
